@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.glyph {
+	line-height: 13px;
+	padding-bottom: 5px;
+	margin-right: 6px;
+	width: 31px;
+}
+.st-content {
+	max-width: 800px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.st-nav-bottom {
+	margin: 0px;
+	list-style-type: none;
+	overflow: hidden;
+	text-decoration: none;
+	padding: 0px;
+	width: 100%;
+}
+nav .st-nav-bottom li {
+	margin: 0px auto;
+	display: inline-block;
+}
+nav .st-nav-bottom li a {
+	padding: 12px 24px;
+	text-align: left;
+	text-decoration: none;
+}
+.st-portfolio  {
+	margin: 30px auto;
+	width: 100%;
+}
+nav.w3-top ul li a {
+}
+img {
+	margin: auto;
+	display: block;
+	width: auto;
+}
+.w3-top .st-portfolio-width {
+	margin: 0px auto;
+	max-width: 800px;
+}
+.st-menu-text {
+	line-height: 75%;
+}
+.st-menu-width {
+	width: 200px;
+}
+w3-hover-opacity st-list   {
+	padding: 5px auto;
+	text-align: left;
+	display: list-item;
+}
+a {
+	text-decoration: none;
+}
+ul.w3-ul w3-hoverable li {
+}
