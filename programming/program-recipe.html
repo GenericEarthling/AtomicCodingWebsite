@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>PROGRAMMING</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="../css/atomic_stylesheet.css" rel="stylesheet" type="text/css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+	background-color: #333232;
+	margin-top: 20px;
+}
+nav.w3-top {
+	background-color:white;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<nav class="w3-top">
+	<div class="st-portfolio-width">
+		<div class="w3-dropdown-hover">
+			<button class="w3-btn w3-red"><i class="fa fa-bars w3-xlarge"></i></button><span>&nbsp; PROGRAMMING &nbsp; <i class="fa fa-folder-open-o"></i>&nbsp; RECIPE NUTRITION CALCULATOR (<em style="color: red">!--UNDER CONSTRUCTION</em>) </span>
+		<div class="w3-dropdown-content w3-border st-menu-width">
+			<a class="st-menu-text" href="../index.html" style="color: red;" >HOME</a>
+         <a href="js-classwork/default.htm" target="_blank" class="st-menu-text">HCC-JAVASCRIPT</a>
+			<a class="st-menu-text" href="#">LINK 2</a>
+			<a class="st-menu-text" href="#">LINK 3</a>
+         <a class="st-menu-text" href="#">LINK 4</a>
+      </div>
+		</div>
+	</div>
+</nav>
+
+<div>
+     <header><h1>Recipe Nutrition Calculator</h1></header>
+</div>
+<div class="containter">
+	<div class="recipe_heading">
+		<label for="recipe_name" class="recipe_name_label">Recipe Name</label>
+		<input type="text" class="recipe_name_input" id="recipe_name" />
+	</div>
+
+	<div id="left_box">
+   <h2>Ingredient Nutrition Label</h2>
+		<label for="ingredient" class="external_label">Ingredient Name</label>
+		<input type="text" class="facts_input" id="ingredient" /><br />
+
+		<label for="amt" class="external_label">Recipe Amount</label>
+		<input type="text" class="facts_input" id="amt" />
+
+		<select name="measurement_selection">
+            	<optgroup label="Select">
+      			<option value="oz">ounces</option>
+      			<option value="grams">grams</option>
+             	</optgroup>
+    	</select><br />
+                
+      <fieldset>
+      	<p class="instructions">Instructions:<br />Input values below copied exactly from Nutrition Label.</p>                 
+         <h3>Nutrition Facts</h3>
+         <label for="serving_size" class="facts_label">Serving Size</label>
+                    
+         <input type="text" class="facts_input" id="serving_size" placeholder="in grams" /> <br />
+         <hr class="thick" />
+                   
+			<label for="cal_per_serv" class="facts_label">Calories</label>
+         <input type="text" class="facts_input" id="cal_per_serv" /><span id="cal_subtotal"></span><br />
+         <hr class="med" />
+
+          <label for="fat" class="facts_label">Total Fat</label>
+          <input type="text" class="facts_input" id="fat" /><span id="fat_subtotal">grams</span><br />
+
+          <label for="cholesterol" class="facts_label">Cholesterol</label>
+          <input type="text" class="facts_input" id="cholesterol" /><span id="chol_subtotal">milligrams</span><br />
+
+          <label for="carbs" class="facts_label">Total Carbohydrates</label>
+          <input type="text" class="facts_input" id="carbs" /><span id="carbs_subtotal">grams</span><br />
+
+          <label for="fiber" class="facts_label_indent">Fiber</label>
+          <input type="text" class="facts_input" id="fiber" /><span id="fiber_subtotal">grams</span><br />
+
+       		<label for="protein" class="facts_label">Protein</label>
+         	<input type="text" class="facts_input" id="protein" /><span id="protein_subtotal">grams</span><br />
+        		<hr class="thick" />
+
+         	<input type="button" class="button" id="calculate_ingredient" value="Calculate Ingredient Amount Totals" />
+          	<input type="button" class="button" id="clear_ingredient" value="Reset All Ingredient Values" />
+           	<input type="button" class="button" id="add_ingredient" value="Add Ingredient Values to Recipe" />
+		</fieldset>
+               
+</div>
+
+<div id="right_box">
+     <h2>Recipe Nutrition Totals</h2>
+     		<p class="instructions">Instructions:<br />Input the number of servings you expect to get out of the recipe to display the Nutrition Facts per serving.</p>
+           <label for="servings" class="external_label">Servings</label>
+           <input type="text" class="facts_input" id="servings" value="1" />
+           <input type="button" id="calc_servings" value="Calculate Servings" class="button" /><br />
+         
+               
+
+    <fieldset>
+     <h3>Nutrition Facts</h3>
+           <label for="grams_per_serving" class="facts_label">Serving Size</label>
+           <input disabled="disabled" class="facts_input" id="grams_per_serving" /><span>in grams</span>
+           <hr class="thick" />
+           <label for="calories_total" class="facts_label">Calories</label>
+           <input disabled="disabled" class="facts_input" id="calories_total"><span></span>
+           <hr class="med" />
+           
+           <label for="fat_total" class="facts_label">Fat</label>
+           <input disabled="disabled" class="facts_input" id="fat_total"><span>grams</span><br />
+           
+           <label for="cholesterol_total" class="facts_label">Cholesterol</label>
+           <input disabled="disabled" class="facts_input" id="cholesterol_total"><span>milligrams</span><br />
+           
+           <label for="carbs_total" class="facts_label">Carbohydrates</label>
+           <input disabled="disabled" class="facts_input" id="carbs_total"><span>grams</span><br />
+           
+           <label for="fiber_total" class="facts_label_indent">Fiber</label>
+           <input disabled="disabled" class="facts_input" id="fiber_total"><span>grams</span><br />
+           
+           <label for="protein_total" class="facts_label">Protein</label>
+           <input disabled="disabled" class="facts_input" id="protein_total"><span>grams</span><br />
+           <hr class="thick" />
+           
+           <input type="button" class="button" id="print" value="Print Recipe Label" />
+                
+			</fieldset>
+	</div>
+   <article>
+       <h2>Ingredient list</h2> 
+   <table width="100%" border="1">
+   <tbody>
+      <tr>
+         <th scope="col">Edit or Delete</th>
+         <th class="ingredient" scope="col">Ingredient</th>
+         <th scope="col">Amount</th>
+         <th scope="col">Serving</th>
+         <th scope="col">Calories</th>
+         <th scope="col">Fat</th>
+         <th scope="col">Cholesterol</th>
+         <th scope="col">Carbohydrates</th>
+         <th scope="col">Fiber</th>
+         <th scope="col">Protein</th>
+      </tr>
+      <tr>
+         <th scope="row">edit/delete </th>
+         <td class="ingredient">&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <th scope="row">edit/delete</th>
+         <td class="ingredient">&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+      </tr>
+   </tbody>
+	</table>
+       <input type="button" class="button" id="reset" value="Reset Recipe" />
+   </article>             
+</div>
+
+
+
+
+<!-- Bottom Navigation -->
+<!-- <div class="w3-row st-content">
+  <div class="w3-col s6 w3-center"><a href="../index.html" title="Home" class="w3-hover-opacity" >HOME</a></div>
+  <div class="w3-col s6 w3-center"><a href="#" title="top of page" class="w3-hover-opacity" >TOP</a></div>
+</div>-->
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">	
+  <p style="font-size:small" >&copy; Sharon Tender</p>
+</footer>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script type="text/javascript" charset="utf-8" src="js/recipe-nutrition-calculator.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<title>Sharon Tender</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/w3-theme-light-blue.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	opacity: 0.7;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+	background-image: url(images/1218x864_index_1.jpg);
+	min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/1218x864_index_2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/1218x864_index_2.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<link href="css/atomic_stylesheet.css" rel="stylesheet" type="text/css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    	<li><a href="#" class="w3-padding-large">HOME</a></li>
+		<li><a href="#about" class="w3-padding-large">ABOUT</a></li>
+      <li><a href="#samples" class="w3-padding-large">SAMPLES</a></li>
+      <li><a href="#contact" class="w3-padding-large">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">SHARON TENDER</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+      <div class="w3-center w3-section">
+      	<img src="images/self_portrait.png" class="w3-circle w3-light-blue" alt="Photo of Me">
+      	<h3><b>Sharon Tender</b></h3>
+      	<p><em>Bachelors in Communication Design, May 1993, University North Texas<br />
+      Computer Programming Specialist Certification, Dec. 2016, HCC<br />Associates Degree, Dec. 2017, HCC</em></p>
+    	</div>
+  <p>I have been working toward a software programming Associates Degree at Hillsborough Community College where I currently have a 3.9 GPA. I have always been interested in programming and think my background in designing for the end user would blend well with it. Classes I have taken are Programming Logic, Web Scripting, Systems Analysis, Project Management, Management Information Systems, Database Concepts, and programming languages. Under "Programming Work" below is a list of programming languages I have taken classes in.
+  </p>
+  <p>For my Capstone Project this Fall 2017, I am working on a recipe nutrition program. This program will allow the user to enter ingredients in a recipe to create their own nutrition label for that recipe. It will also allow the user to save their recipe and the ingredients to a database for future use. 
+  </p>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="samples">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">SAMPLES</span>
+  </div>
+</div>
+
+<!-- Programming Work -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">PROGRAMMING WORK</h3>
+  		<p class="w3-center"><em>Programming Languages Studied</em>
+  		<br /> Programming experience Java, Advanced Java, C#, C, C++, UNIX, Visual Basic, and HTML5/CSS3.
+  		<p>Many of my programming projects are in my <a href="https://github.com/GenericEarthling?tab=repositories" class="w3-hover-text-orange" style="text-decoration:underline"><strong>GitHub</strong></a> account. There you will find projects in Java, C#, C, and HTML/CSS3. It changes frequently, so bookmark it. </p>
+  		<p>Java has been my main focus of study and will be used for my Capstone. Some of the work I have done in Java involved: Java API for classes and methods, JAR, setting classpaths, generics, design patterns, logging/tracing, JUnit testing, assertions, autoboxing, RegEx, inheritance, encapsulation, polymorphism, binding, Collections, stack/ heap/garbage collection, Interfaces, abstract classes, Multithreading/Concurrency, Javadoc/commenting/annotations, MVC, Version Control Systems, Lambda expressions, Serialization, CRUD, I/O and persistent data, and exception handling. For the GUI I have used Swing and AWT java classes. </p>
+      <p> The following link for Java below were some of the first programs written. The JavaScript will take you to another webpage. </p>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 w3-padding-tiny">
+      <a href="java-programming/java-program1.html"><img src="images/PROGRAMMING-1.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    </div>
+
+    <div class="w3-col m3 w3-padding-tiny">
+      <a href="programming/js-classwork/default.htm" target="_blank"><img src="images/PROGRAMMING-2.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    </div>
+
+    <div class="w3-col m3 w3-padding-tiny">
+      <a href="C-sharp-programming/Csharp-program1.html"><img src="images/PROGRAMMING-3.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    </div>
+
+    <div class="w3-col m3 w3-padding-tiny">
+      <a href="#"><img src="images/PROGRAMMING-4.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Publication Work -->
+<div class="w3-content w3-container w3-padding-64">
+	<h3 class="w3-center">PUBLICATION DESIGN WORK</h3>
+   <p>As an art director in my past life, I have been responsible for managing projects along with concepting and designing advertising campaigns, and selecting/hiring photographers/illustrators. While working for Source Interlink Media (now known as TEN Network) from 2004 to 2013 I was responsible for the design and production of each of these monthly magazines along with special issues.</p>
+   <p class="w3-center w3-small" >( Click on each title to see samples. )</p>
+
+  	<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+	<div class="w3-row-padding w3-center w3-section">
+		<div class="w3-col m3 w3-padding-tiny">
+			<a href="publication/pub-vette.html"> <img src="images/PUB-VETTE.jpg" style="width:100%" class="w3-hover-opacity"></a>
+		</div>
+
+		<div class="w3-col m3 w3-padding-tiny">
+			<a href="publication/pub-mopar.html"> <img src="images/PUB-MOPP.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+
+        <div class="w3-col m3 w3-padding-tiny">
+            <a href="publication/pub-fever.html"> <img src="images/PUB-CORP.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+
+    	<div class="w3-col m3 w3-padding-tiny">
+            <a href="publication/pub-stock.html"> <img src="images/PUB-SCRP1.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+	</div>
+
+	<div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3 w3-padding-tiny ">
+                <a href=""><img src="images/PLACE-HOLDER-1.jpg" style="width:100%" class="w3-hover-opacity"></a>
+            </div>
+
+		<div class="w3-col m3 w3-padding-tiny">
+      	<a href="publication/pub-moparnow.html"> <img src="images/PUB-MOPN.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+      
+		<div class="w3-col m3 w3-padding-tiny">
+      	<a href="publication/pub-stock2.html"> <img src="images/PUB-SCRP2.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+      
+      <div class="w3-col m3 w3-padding-tiny">
+      	<a href=""><img src="images/PLACE-HOLDER-2.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    	</div>
+
+	</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container" id="contact">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-128">
+  <h3 class="w3-center">Home is where my computer is.</h3>
+  <p class="w3-center"><em>Drop me a line!</em></p>
+
+	<div class="w3-row w3-padding-32 w3-section">
+		<div class="w3-col m4 w3-container">
+      <div id="googleMap">
+      </div>   
+    	</div>
+      
+    	<div class="w3-col m8 w3-container w3-section">
+			<div class="w3-large w3-margin-bottom" >
+       		<p class="w3-margin-0">Emailing...</p>
+      			<ul class="w3-ul w3-hoverable w3-border-bottom">
+         		<li class="w3-hover-opacity" ><i class="fa fa-bars fa-envelope fa-2x"></i>&nbsp; sharon(at)atomiccoding.com </li>
+         	</ul>
+      	</div>
+      
+      	<div class="w3-large w3-margin-bottom">
+      		<p>Stalking... </p>
+      			<ul class="w3-ul w3-hoverable w3-border-bottom">
+      				<li class="w3-hover-opacity" ><a href="https://github.com/GenericEarthling?tab=repositories" target="_blank" class="glyph" >
+            			<i class="fa fa-github fa-2x"></i>&nbsp;&nbsp; /GenericEarthling</a> </li>
+                  <li class="w3-hover-opacity" ><a href="https://www.linkedin.com/in/sharontender" target="_blank" class="glyph" >
+                		<i class="fa fa-linkedin fa-2x"></i>&nbsp; /sharontender</a></li>
+                  <li class="w3-hover-opacity" ><a href="https://www.pinterest.com/earthling2/" target="_blank" class="glyph" >
+            			<i class="fa fa-pinterest fa-2x"></i>&nbsp;&nbsp; /earthling2</a> </li>
+         			<li class="w3-hover-opacity" ><a href="https://twitter.com/SharonTender" target="_blank" class="glyph" >
+            			<i class="fa fa-twitter fa-2x"></i>&nbsp; @SharonTender</a></li>
+         		</ul>
+      	</div>
+    </div>
+  </div>
+</div> <!-- END OF CONTACT CONTAINER SECTION  -->
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-12 w3-hover-black">
+  <p style="font-size:small" >Special thanks to  <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> for this template.</p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+// set location of map over Tampa
+function myMap() {
+  myCenter=new google.maps.LatLng(27.950823, -82.457627);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+<!-- Add Google Maps API key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFRObYMLMZma_6VXOCLwMFAHm3Oyn1Lvo&callback=myMap" type="text/javascript"></script>
+
+</body>
+</html>

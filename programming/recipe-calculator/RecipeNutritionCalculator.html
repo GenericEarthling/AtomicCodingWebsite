@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Recipe Nutrition</title>
+        <link href="css/recipe_nutrition.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+
+<div>
+     <header><h1>Recipe Nutrition Calculator</h1></header>
+     <nav>
+      <p>
+      <a href="/">Nav ---> Link this to my home page</a>
+      </p>
+     </nav>
+</div>
+<div class="containter">
+	<div class="recipe_heading">
+		<label for="recipe_name" class="recipe_name_label">Recipe Name</label>
+		<input type="text" class="recipe_name_input" id="recipe_name" />
+	</div>
+
+	<div id="left_box">
+   <h2>Ingredient Nutrition Label</h2>
+		<label for="ingredient" class="external_label">Ingredient Name</label>
+		<input type="text" class="facts_input" id="ingredient" /><br />
+
+		<label for="amt" class="external_label">Recipe Amount</label>
+		<input type="text" class="facts_input" id="amt" />
+
+		<select name="measurement_selection">
+            	<optgroup label="Select">
+      			<option value="oz">ounces</option>
+      			<option value="grams">grams</option>
+             	</optgroup>
+    	</select><br />
+                
+      <fieldset>
+      	<p class="instructions">Instructions:<br />Input values below copied exactly from Nutrition Label.</p>                 
+         <h3>Nutrition Facts</h3>
+         <label for="serving_size" class="facts_label">Serving Size</label>
+                    
+         <input type="text" class="facts_input" id="serving_size" placeholder="in grams" /> <br />
+         <hr class="thick" />
+                   
+			<label for="cal_per_serv" class="facts_label">Calories</label>
+         <input type="text" class="facts_input" id="cal_per_serv" /><span id="cal_subtotal"></span><br />
+         <hr class="med" />
+
+          <label for="fat" class="facts_label">Total Fat</label>
+          <input type="text" class="facts_input" id="fat" /><span id="fat_subtotal">grams</span><br />
+
+          <label for="cholesterol" class="facts_label">Cholesterol</label>
+          <input type="text" class="facts_input" id="cholesterol" /><span id="chol_subtotal">milligrams</span><br />
+
+          <label for="carbs" class="facts_label">Total Carbohydrates</label>
+          <input type="text" class="facts_input" id="carbs" /><span id="carbs_subtotal">grams</span><br />
+
+          <label for="fiber" class="facts_label_indent">Fiber</label>
+          <input type="text" class="facts_input" id="fiber" /><span id="fiber_subtotal">grams</span><br />
+
+       		<label for="protein" class="facts_label">Protein</label>
+         	<input type="text" class="facts_input" id="protein" /><span id="protein_subtotal">grams</span><br />
+        		<hr class="thick" />
+
+         	<input type="button" class="button" id="calculate_ingredient" value="Calculate Ingredient Amount Totals" />
+          	<input type="button" class="button" id="clear_ingredient" value="Reset All Ingredient Values" />
+           	<input type="button" class="button" id="add_ingredient" value="Add Ingredient Values to Recipe" />
+		</fieldset>
+               
+</div>
+
+<div id="right_box">
+     <h2>Recipe Nutrition Totals</h2>
+     		<p class="instructions">Instructions:<br />Input the number of servings you expect to get out of the recipe to display the Nutrition Facts per serving.</p>
+           <label for="servings" class="external_label">Servings</label>
+           <input type="text" class="facts_input" id="servings" value="1" />
+           <input type="button" id="calc_servings" value="Calculate Servings" class="button" /><br />
+         
+               
+
+    <fieldset>
+     <h3>Nutrition Facts</h3>
+           <label for="grams_per_serving" class="facts_label">Serving Size</label>
+           <input disabled="disabled" class="facts_input" id="grams_per_serving" /><span>in grams</span>
+           <hr class="thick" />
+           <label for="calories_total" class="facts_label">Calories</label>
+           <input disabled="disabled" class="facts_input" id="calories_total"><span></span>
+           <hr class="med" />
+           
+           <label for="fat_total" class="facts_label">Fat</label>
+           <input disabled="disabled" class="facts_input" id="fat_total"><span>grams</span><br />
+           
+           <label for="cholesterol_total" class="facts_label">Cholesterol</label>
+           <input disabled="disabled" class="facts_input" id="cholesterol_total"><span>milligrams</span><br />
+           
+           <label for="carbs_total" class="facts_label">Carbohydrates</label>
+           <input disabled="disabled" class="facts_input" id="carbs_total"><span>grams</span><br />
+           
+           <label for="fiber_total" class="facts_label_indent">Fiber</label>
+           <input disabled="disabled" class="facts_input" id="fiber_total"><span>grams</span><br />
+           
+           <label for="protein_total" class="facts_label">Protein</label>
+           <input disabled="disabled" class="facts_input" id="protein_total"><span>grams</span><br />
+           <hr class="thick" />
+           
+           <input type="button" class="button" id="print" value="Print Recipe Label" />
+                
+			</fieldset>
+	</div>
+   <article>
+       <h2>Ingredient list</h2> 
+   <table width="100%" border="1">
+   <tbody>
+      <tr>
+         <th scope="col">Edit or Delete</th>
+         <th class="ingredient" scope="col">Ingredient</th>
+         <th scope="col">Amount</th>
+         <th scope="col">Serving</th>
+         <th scope="col">Calories</th>
+         <th scope="col">Fat</th>
+         <th scope="col">Cholesterol</th>
+         <th scope="col">Carbohydrates</th>
+         <th scope="col">Fiber</th>
+         <th scope="col">Protein</th>
+      </tr>
+      <tr>
+         <th scope="row">edit/delete </th>
+         <td class="ingredient">&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <th scope="row">edit/delete</th>
+         <td class="ingredient">&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+      </tr>
+   </tbody>
+	</table>
+       <input type="button" class="button" id="reset" value="Reset Recipe" />
+   </article>             
+</div>
+
+<div>
+	<footer>
+	<p>&copy; Copyright  by Sharon Tender</p>
+ 	</footer>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script type="text/javascript" charset="utf-8" src="js/recipe-nutrition-calculator.js"></script>
+</body>
+</html>
