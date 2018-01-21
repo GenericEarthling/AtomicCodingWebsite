@@ -3,7 +3,7 @@
 $db_username = 'sharontender';
 $db_password = 'RaT3oTu~42';
 $db_name = 'LifeHappens';
-$db_host = 'localhost'; // 107.180.40.137  // localhost
+$db_host = 'localhost'; 
 
 // declare global variables here
 
