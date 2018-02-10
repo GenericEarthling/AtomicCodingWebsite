@@ -8,18 +8,26 @@
 <link href="../css/atomic_stylesheet.css" rel="stylesheet" type="text/css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+h4 {color: white;}
 body, html {
-	height: 100%;
-	color: #777;
-	line-height: 1.8;
-	background-color: #333232;
-	margin-top: 20px;
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    background-color: #333232;
+    margin-top: 20px;
 }
 nav.w3-top {
-	background-color:white;
+    background-color:white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
 }
 p {
-	text-align: center;
+    text-align: left;
 }
 </style>
 
@@ -27,55 +35,110 @@ p {
 
 <!-- Navbar (sit on top) -->
 <nav class="w3-top">
-	<div class="st-portfolio-width">
-		<div class="w3-dropdown-hover">
-			<button class="w3-btn w3-red"><i class="fa fa-bars w3-xlarge"></i></button><span>&nbsp; <font color="red">PROGRAMMING</font> &nbsp; <i class="fa fa-folder-open-o"></i>&nbsp; JAVA:&nbsp; LOGO GRAPHIC </span>
+    <div class="st-portfolio-width">
+        <div class="w3-dropdown-hover">
+            <button class="w3-btn w3-red"><i class="fa fa-bars w3-xlarge"></i></button><span>&nbsp; <font color="red">PROGRAMMING</font> &nbsp; <i class="fa fa-folder-open-o"></i>&nbsp; JAVA&nbsp;  </span>
 		<div class="w3-dropdown-content w3-border st-menu-width">
-			<a class="st-menu-text" href="../index.html">HOME</a>
-         <a class="st-menu-text" href="java-program1.html" style="color: red;" >LOGO GRAPHIC</a>
-         <a class="st-menu-text" href="java-program2.html">TEMP. CONVERSION</a>
-         <a class="st-menu-text" href="java-program3.html">GUESSING GAME</a>
-         <a class="st-menu-text" href="java-program4.html">HISTOGRAM</a>
-         <a class="st-menu-text" href="java-program5.html">PIG LATIN</a>
-<!--         <a class="st-menu-text" href="java-program6.html" style="color: red;" >PROGRAM 6</a>
-         <a class="st-menu-text" href="java-program7.html">PROGRAM 7</a>
-         <a class="st-menu-text" href="java-program8.html">PROGRAM 8</a>
-         <a class="st-menu-text" href="java-program9.html">PROGRAM 9</a>
-         <a class="st-menu-text" href="java-program10.html">PROGRAM 10</a>         
--->      </div>
-		</div>
-	</div>
+                    <a class="st-menu-text" href="../index.html">HOME</a>
+                    <a class="st-menu-text" href="java-program1.html" style="color: red;">JAVA</a>
+                    <a class="st-menu-text" href="../programming/js-classwork/default.htm" target="_blank">JAVASCRIPT</a>
+                    <a class="st-menu-text" href="../C-sharp-programming/Csharp-program1.html">C#</a>
+                    <a class="st-menu-text" href="../php-programming/life_happens/index.php" target="_blank">PHP</a>
+         
+                </div>
+        </div>
+    </div>
 </nav>
 
-<!-- Container for Java Project #1 description -->   
-<div class="w3-row-padding st-content w3-center">	
-  <h2>Logo Graphic</h2>
-  <p>Requirements: Create a logo that contains some circles, lines, or rectangles, plus a business name as text.  This must be a stand-alone program. Use the Graphics class in the Java API documentation for drawing shapes and text.</p>
+<div class="st-content" >
+    <h1 style="text-align:center">Java Programming Projects</h1>
+    <p>Java has been my main focus of study and was used for my Capstone. Some of the work I have done in Java involved: JSP, Servlets, Java API, JAR, generics, design patterns, logging/tracing, JUnit testing, assertions, autoboxing, RegEx, inheritance, encapsulation, polymorphism, binding, collections, stack/heap, garbage collection, Interfaces, abstract classes, multithreading, concurrency, Javadoc, MVC, Version Control Systems, Lambda expressions, Serialization, CRUD, I/O and persistent data, and exception handling. For the GUI I have used NetBeans Forms, Swing, and AWT java classes. </p>
 </div>
 
-<!--   Container for 1 item    -->
-<div class="w3-row-padding st-content">
-  <div class="w3-col m1 w3-center" style="width: 100%;"><img src="images/JavaProgram-1.png" ></div>
+<!-- row 1 -->
+<div class="st-content w3-row">
+
+    <div class="w3-third w3-container w3-hover-black">
+      <h4>Nutrition Label Generator</h4>
+      <img src="images/JavaProgram-6.png" style="width:100%">      
+      <h5>Personal project (WIP)</h5>
+      <p>Stand-alone Java application that calculates and generates a nutrition label. This application allows the user to enter ingredients for a recipe to create their own nutrition label. It also saves ingredients entered to a file and allows the user to retrieve the data for future use. Code available on <a href="https://github.com/GenericEarthling/Nutrition_Label" class="w3-hover-text-orange" style="text-decoration:underline"><strong>GitHub</strong></a>.</p>
+    </div>    
+
+    <div class="w3-third w3-container w3-hover-black">
+     <h4>Web Nutrition Label</h4>
+     <img src="images/JavaProgram-7a.png" style="width:100%">      
+     <h5>Class project</h5>
+     <p>Web application that calculates a nutrition label for personal recipes. Code available on <a href="https://github.com/GenericEarthling/RecipeNutritionLabel" class="w3-hover-text-orange" style="text-decoration:underline"><strong>GitHub</strong></a>.</p>
+    </div>
+
+    <div class="w3-third w3-container w3-hover-black">
+      <h4>Search GUI</h4>
+      <img src="images/searchGUI.png" style="width:100%">
+      <h5>Java II group project</h5>
+      <p>A stand-alone program using swing and AWT classes. My part of the project involved saving and retrieving data from a file, creating persistent storage and other data management. I created this GUI, another one was used for the group project. Code available on <a href="https://github.com/GenericEarthling/GroupSearchEngine" class="w3-hover-text-orange" style="text-decoration:underline"><strong>GitHub</strong></a>.</p>
+    </div>
+
 </div>
 
-<!--   Container for 1 item    -->
-<div class="w3-row-padding st-content">
-  <div class="w3-col m1 w3-center" style="width: 100%;"><img src="images/JavaProgram-1-code.png" ></div>
-    <p>Code available by request for prospective employers.</p>
+
+<!-- row 2 -->
+<div class="st-content w3-row">
+
+    <div class="w3-third w3-container w3-hover-black">
+      <h4>Temperature Conversion</h4>
+      <img src="images/JavaProgram-2.png" style="width:100%">      
+      <h5>Java I class project</h5>
+      <p>A stand-alone GUI program that displays Fahrenheit to Celsius temperature conversion in a table using AWT and swing.</p>
+    </div>    
+
+    <div class="w3-third w3-container w3-hover-black">
+     <h4>Histogram</h4>
+     <img src="images/JavaProgram-4.png" style="width:100%">      
+     <h5>Java I class project</h5>
+     <p>A non-GUI stand-alone application that displays a histogram that reads values from a data file. The number of stars drawn shows how many times each value was entered as input.</p>
+    </div>
+
+    <div class="w3-third w3-container w3-hover-black">
+      <h4>Hal 9000</h4>
+      <img src="images/JavaProgram-3a.png" style="width:100%">
+    <img src="images/JavaProgram-3c.png" style="width:100%">
+    <img src="images/JavaProgram-3e.png" style="width:100%">
+    <img src="images/JavaProgram-3f.png" style="width:100%">
+      <h5>Java I class project</h5>
+      <p>A stand-alone program using the JOptionPane class to play a guessing game. Program chooses a random number, user can guess up to 4 tries for correct number.</p>
+    </div>
 
 </div>
 
-<!-- Bottom Navigation -->
- <div class="w3-row st-content">
-  <div class="w3-col s6 w3-center"><a href="../index.html" title="Home" class="w3-hover-opacity" >HOME</a></div>
-  <div class="w3-col s6 w3-center"><a href="#" title="top of page" class="w3-hover-opacity" >TOP</a></div>
+
+
+<!-- row 3 -->
+<div class="st-content w3-row">
+
+    
+    <div class="w3-twothird w3-container w3-hover-black">
+      <h4>Pig Latin</h4>
+      <img src="images/JavaProgram-5.png" style="width:100%">
+      <h5>Java I class project</h5>
+      <p>A stand-alone Java GUI application using swing. It converts text entered by user in the left text area into Pig Latin.</p>
+    </div>
+
+    <div class="w3-third w3-container w3-hover-black">
+      <h4>Logo Graphic</h4>
+      <img src="images/JavaProgram-1.png" style="width:100%">      
+      <h5>Java I class project</h5>
+      <p>This stand-alone program used the Graphics class in the Java API for drawing shapes and text.</p>
+    </div>
+
 </div>
+ 
+
 
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">	
-  <p style="font-size:small" >Special thanks to  <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> for this template.</p>
+<footer class="w3-center w3-dark-grey w3-hover-black">	
+    <p style="font-size:small; text-align:center;">&COPY; Sharon Tender </p>
 </footer>
- 
 </body>
 </html>
 
